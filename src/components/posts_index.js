@@ -6,7 +6,7 @@ import { Link } from 'react-router'; //Link is an actual Component.
 
 class PostsIndex extends Component {
 
-	//a lifecycle method. when it's about to be re-rendered to the DOM for the first time once. 
+	//a lifecycle method. when it's about to be re-rendered to the DOM for the first time once, it fetch its data.
 	componentWillMount(){
 		this.props.fetchPosts();
 	}
